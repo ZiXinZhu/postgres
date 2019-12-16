@@ -11,6 +11,6 @@ import java.util.List;
 @Repository
 public interface UserDao {
 
-    @Select("SELECT * FROM \"public\".\"user\" where id=1")
+    @Select("SELECT a.* FROM \"public\".\"user\" a where a.id=2")
     List<UserPO> all();
 }
