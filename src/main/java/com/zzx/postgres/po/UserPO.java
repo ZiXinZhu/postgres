@@ -38,4 +38,14 @@ public class UserPO {
     public void setCreatedTime(String createdTime) {
         this.createdTime = createdTime;
     }
+
+    @Override
+    public String toString() {
+        return "UserPO{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", createdTime='" + createdTime + '\'' +
+                '}';
+    }
 }
